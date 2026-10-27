@@ -29,7 +29,7 @@ fi
 TMPDIR=$(mktemp -d)
 trap 'rm -rf "$TMPDIR"' EXIT
 
-REPO="https://github.com/mufeng05/openwrt-sonic-fullcone"
+REPO="https://github.com/gitdog9527/openwrt-sonic-fullcone"
 echo "Cloning $REPO ..."
 if ! git clone --depth=1 --single-branch "$REPO" "$TMPDIR/sonic-fullcone" 2>&1; then
     echo "Error: failed to clone $REPO"
